@@ -1,0 +1,170 @@
+body {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    background-color: #1d1d1d;
+    background-image: linear-gradient(to right bottom, rgb(71, 0, 151), rgb(69, 2, 72));
+    background-repeat: no-repeat;
+}
+
+#tela {
+    background-color: rgba(255, 255, 255, 5%);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 10px;
+
+    width: auto;
+    height: auto;
+    margin: 30px;
+}
+
+
+
+.menu {
+    margin-right: 10%;
+    height: 90.7vh;
+    max-height: 94vh;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    width: 25%;
+    border-radius: 10px 0 0 10px;
+}
+
+.botoes {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+button {
+    background-color: transparent;
+    border: transparent;
+    color: springgreen;
+    width: 100%;
+    height: 100%;
+    font-size: 12px;
+}
+
+
+h1, p {
+    font-size: 16px;
+    color: springgreen;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 50px;
+    padding-right: 50px;
+}
+
+h1 {
+    color: orange;
+}
+
+p {
+    color: rgb(255, 217, 147);
+    font-size: 10px;
+}
+
+.poema {
+    margin-right: 5%;
+}
+
+.texto {
+    text-align: center;
+    background-color: rgba(255, 255, 255, 5%);
+    border-radius: 10px;
+    width: auto;
+    height: auto;
+    box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.25);
+}
+
+/* Mobile */
+
+@media(max-width:768px){
+    #tela {
+        margin: 10px;
+        display: block;
+        height: 99vh;
+        width: auto;
+    }
+
+    .botoes {
+        padding-top: 10px;
+        flex-direction: row;
+        gap: 40px;
+    }
+
+    .menu {
+        width: 100%;
+        height: 7vh;
+        border-radius: 10px 10px 0 0;
+    }
+
+    .poema {
+        width: 300px;
+        margin: auto;
+    }
+
+    h1 {
+        padding-top: 5px;
+        padding-bottom: 0px;
+    }
+
+    p {
+        font-size: 9.5px;
+        padding-bottom: 5px;
+    }
+
+    button {
+        font-size: 9px;
+    }
+}
+
+
+@media(max-width:375px){
+    #tela {
+        margin: 10px;
+    }
+    
+    #tela {
+        display: block;
+        height: 100vh;
+        width: auto;
+    }
+
+    head {
+        justify-content: center;
+        align-items: center;
+        place-content: center;
+    }
+
+    .botoes {
+        flex-direction: row;
+        gap: 10px;
+    }
+
+    .menu {
+        width: 100%;
+        height: 7vh;
+        border-radius: 10px 10px 0 0;
+    }
+
+    .poema {
+        width: 260px;
+        margin: auto;
+    }
+
+    h1, p {
+        padding-top: 5px;
+        padding-bottom: 5px;
+    }
+
+    h1 {
+        font-size: 12px;
+    }
+
+    button {
+        font-size: 8px;
+    }
+}
