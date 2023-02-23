@@ -19,8 +19,6 @@ body {
     margin: 30px;
 }
 
-
-
 .menu {
     margin-right: 10%;
     height: 90.7vh;
@@ -80,13 +78,12 @@ p {
 }
 
 /* Mobile */
-
 @media(max-width:768px){
     #tela {
         margin: 20px;
         display: block;
         height: 100vh;
-        width: auto;
+        width: 100vh;
     }
 
     .botoes {
@@ -122,21 +119,12 @@ p {
 }
 
 
-@media(max-width:375px){
-    #tela {
-        margin: 10px;
-    }
-    
+@media(max-width:375px){    
     #tela {
         display: block;
         height: 100vh;
-        width: auto;
-    }
-
-    head {
-        justify-content: center;
-        align-items: center;
-        place-content: center;
+        margin: 10px;
+        width: 100vh;
     }
 
     .botoes {
